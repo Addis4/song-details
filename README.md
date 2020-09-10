@@ -35,5 +35,5 @@ RawData(json): {
 Route(Method - POST) : http://localhost:8080/graphql
 
 RawData(json): {
-                   "query":"query{songById(id: \"song-4\"){uid,Name}}"
+                   "query":"query{songbyId(id: \"song-4\"){uid,Name}}"
                }
