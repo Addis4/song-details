@@ -27,7 +27,7 @@ Json Formats for different Rest services are mentioned below :
 Route(Method - POST) : http://localhost:8080/graphql
 
 RawData(json): {
-                   "query":"query{songById(id: \"song-1\"){id,name}}"
+                   "query":"query{songById(id: \\\"song-1\\\"){id,name, artist{firstName}}"
                }
 
 2. Failure Case:
@@ -35,5 +35,5 @@ RawData(json): {
 Route(Method - POST) : http://localhost:8080/graphql
 
 RawData(json): {
-                   "query":"query{songById(id: \"song-4\"){uid,Name}}"
+                   "query":"query{songById(id: \\\"song-4\\\"){uid,Name}}"
                }

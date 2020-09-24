@@ -43,7 +43,18 @@
             <artifactId>guava</artifactId>
             <version>23.5-jre</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.objectstyle.graphql.test/graphql-test -->
+        <dependency>
+            <groupId>org.objectstyle.graphql.test</groupId>
+            <artifactId>graphql-test</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-spring-boot-starter-test</artifactId>
+            <version>6.0.0</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -54,6 +65,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

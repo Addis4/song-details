@@ -52,7 +52,7 @@ public class GraphQLDataFetchers {
     public DataFetcher getArtistByIdDataFetcher() {
         return dataFetchingEnvironment -> {
             Map<String, String> song = dataFetchingEnvironment.getSource();
-            String artistID = song.get("artistID");
+            String artistID = song.get("artist");
             return artist
                     .stream()
                     .filter(payment -> payment.get("id").equals(artistID))

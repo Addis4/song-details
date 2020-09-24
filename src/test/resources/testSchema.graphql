@@ -1,0 +1,10 @@
+query
+{
+    songById(id: "song-1")
+    {
+        name
+        artist{
+            firstName
+        }
+    }
+}
